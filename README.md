@@ -18,6 +18,9 @@ The system consists of:
 - PID-based navigation system
 - State machine implementation for predefined path execution
 
+## Environment
+![CHEESE!](assets/env.jpeg)
+
 ## Repository Structure
 
 ```
