@@ -6,6 +6,7 @@
 
 A multi-robot coordination and control system built with ROS 2, designed for autonomous agricultural and monitoring operations.
 
+![CHEESE!](assets/bot.jpeg)
 ## Overview
 
 AgriBot is a robust platform for managing and controlling a fleet of autonomous rovers. It provides a comprehensive solution for coordinating multiple robots, implementing autonomous navigation patterns, and offering a web-based monitoring and control interface.
