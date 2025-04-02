@@ -123,7 +123,7 @@ Then open http://localhost:3000 in your browser.
 ## Demo
 
 Autonomous drive:
-![Demo](assets/autonomous.gif)
+![Demo](assets/autonomous.mp4)
 
 A controller node controls the path of every rover in the fleet such that it covers the entire farmland performing its assigned tasks.
 
