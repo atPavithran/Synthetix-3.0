@@ -1,0 +1,4 @@
+worlds/
+node_modules/
+*.json
+*.xml

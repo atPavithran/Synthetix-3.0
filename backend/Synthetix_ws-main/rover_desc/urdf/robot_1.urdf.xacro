@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="robot1">
+
+    <xacro:include filename="$(find rover_desc)/urdf/inertial_macros.xacro"/>
+    <xacro:include filename="$(find rover_desc)/urdf/gazebo_control1.xacro"/>
+    <xacro:property name="robot_namespace" value="robot1" />
+
+    <link name="base_link">
+        <visual>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <box size="1.8 1.2 1.2"/>
+            </geometry>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <box size="1.8 1.2 1.2"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="5.0" x="1.8" y="1.2" z="1.2">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:inertial_box>
+    </link>
+
+    <link name="lf_wheel">
+        <visual>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.225" length="0.22"/>
+            </geometry>            
+        </visual>
+        <collision>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.225" length="0.22"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="0.25" length="0.22" radius="0.225">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:inertial_cylinder>
+    </link>
+
+    <joint name="lf_wheel_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="lf_wheel" />
+        <origin xyz="0.45 0.6 -0.6" rpy="-${pi/2} 0 0"/>
+        <axis xyz="0 0 1"/>
+    </joint>
+
+    <link name="rf_wheel">
+        <visual>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.225" length="0.22"/>
+            </geometry>            
+        </visual>
+        <collision>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.225" length="0.22"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="0.25" length="0.22" radius="0.225">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:inertial_cylinder>
+    </link>
+
+    <joint name="rf_wheel_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="rf_wheel" />
+        <origin xyz="0.45 -0.6 -0.6" rpy="${pi/2} 0 0"/>
+        <axis xyz="0 0 -1"/>
+    </joint>
+
+    <link name="lb_wheel">
+        <visual>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.225" length="0.22"/>
+            </geometry>            
+        </visual>
+        <collision>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.225" length="0.22"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="0.25" length="0.22" radius="0.225">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:inertial_cylinder>
+    </link>
+
+    <joint name="lb_wheel_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="lb_wheel" />
+        <origin xyz="-0.45 0.6 -0.6" rpy="-${pi/2} 0 0"/>
+        <axis xyz="0 0 1"/>
+    </joint>
+
+    <link name="rb_wheel">
+        <visual>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.225" length="0.22"/>
+            </geometry>            
+        </visual>
+        <collision>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.225" length="0.22"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="0.25" length="0.22" radius="0.225">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:inertial_cylinder>
+    </link>
+
+    <joint name="rb_wheel_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="rb_wheel" />
+        <origin xyz="-0.45 -0.6 -0.6" rpy="${pi/2} 0 0"/>
+        <axis xyz="0 0 -1"/>
+    </joint>
+
+</robot>
