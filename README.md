@@ -119,6 +119,20 @@ yarn dev
 ```
 Then open http://localhost:3000 in your browser.
 
+
+## Demo
+
+Autonomous drive:
+![Demo](assets/autonomous.gif)
+
+A controller node controls the path of every rover in the fleet such that it covers the entire farmland performing its assigned tasks.
+
+![Demo](assets/autoremotehybrid.gif)
+
+We have a developed a system that makes it possible to switch any particular rover in the fleet to be manually controlled and observed. Rover 4 in the above demo is being manually controlled via the website's GUI. 
+
+
+
 ## System Architecture
 
 ### Robot Controller
@@ -169,9 +183,6 @@ Hybrid Autonomous and Remote Control Architecture
 2. Use keyboard controls or web interface to navigate
 3. Switch between robots as needed
 
-## Demo
-
-![Demo](assets/autonomous.gif)
 
 ## Customization
 

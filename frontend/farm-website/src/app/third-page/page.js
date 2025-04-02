@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 export default function VncPage() {
   const [vncConfig, setVncConfig] = useState({
-    host: '192.168.108.109',
+    host: '192.168.108.108',
     port: '6080',
     path: 'websockify',
     password: 'niggaballs', // Original password restored
