@@ -151,10 +151,10 @@ The frontend dashboard communicates with the ROS system through API endpoints, p
 ### ROS Graphs
 
 Autonomous ROS2 Fleet Control Architecture
-[!CHEESE](assets/fully%20autonomous%20ros%20graph.jpeg)
+![!CHEESE](assets/fully%20autonomous%20ros%20graph.jpeg)
 
 Hybrid Autonomous and Remote Control Architecture
-[!CHEESE](assets/autonomous%20and%20parallel%20remote%20control%20ros%20graph.jpeg)
+![!CHEESE](assets/autonomous%20and%20parallel%20remote%20control%20ros%20graph.jpeg)
 
 
 ## Usage Scenarios
