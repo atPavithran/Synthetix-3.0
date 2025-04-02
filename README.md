@@ -169,6 +169,10 @@ Hybrid Autonomous and Remote Control Architecture
 2. Use keyboard controls or web interface to navigate
 3. Switch between robots as needed
 
+## Demo
+
+![Demo](assets/autonomous.gif)
+
 ## Customization
 
 ### Adding New Robots
