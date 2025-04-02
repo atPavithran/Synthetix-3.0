@@ -54,6 +54,14 @@ A controller node controls the path of every rover in the fleet such that it cov
 We have a developed a system that makes it possible to switch any particular rover in the fleet to be manually controlled and observed. Rover 4 in the above demo is being manually controlled via the website's GUI. 
 
 
+### ROS Graphs
+
+Autonomous ROS2 Fleet Control Architecture
+![!CHEESE](assets/fully%20autonomous%20ros%20graph.jpeg)
+
+Hybrid Autonomous and Remote Control Architecture
+![!CHEESE](assets/autonomous%20and%20parallel%20remote%20control%20ros%20graph.jpeg)
+
 
 ## Features
 
@@ -163,14 +171,6 @@ The frontend dashboard communicates with the ROS system through API endpoints, p
 - Battery and sensor visualization
 - Control interface for manual operation
 - VNC connection for direct control
-
-### ROS Graphs
-
-Autonomous ROS2 Fleet Control Architecture
-![!CHEESE](assets/fully%20autonomous%20ros%20graph.jpeg)
-
-Hybrid Autonomous and Remote Control Architecture
-![!CHEESE](assets/autonomous%20and%20parallel%20remote%20control%20ros%20graph.jpeg)
 
 
 ## Usage Scenarios
